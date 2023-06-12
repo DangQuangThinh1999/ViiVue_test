@@ -42,12 +42,12 @@ h1 {
   font-size: 48px;
   line-height: 56px;
   /* or 117% */
-
+  cursor: pointer;
   letter-spacing: -2px;
 }
 h3 {
   /* Heading/H3 */
-
+  cursor: pointer;
   font-style: normal;
   font-weight: 700;
   font-size: 24px;
@@ -107,5 +107,57 @@ li span:nth-child(2) {
   border-radius: 4px 4px 0px 4px;
   transform: rotate(-45deg);
 }
-span:nth-child(2) {
+:root {
+  --textColor: var(--color);
+  .blue {
+    --color: #004eab;
+  }
+  .black {
+    --color: #353455;
+  }
+}
+
+/* -------------------------animation-------------------------- */
+
+.fancy span {
+  color: white;
+  transition: all 1s ease;
+}
+
+.fancy span.fade {
+  color: var(--textColor);
+}
+
+.word {
+  position: absolute; /* makes words stack on top of each other */
+  opacity: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.wisteria {
+  color: #8e44ad;
+}
+
+.belize {
+  color: #2980b9;
+}
+
+.letter {
+  display: inline-block;
+  transform-origin: 50% 50% 25px;
+}
+
+.letter.out {
+  transform: rotateX(90deg);
+  transition: transform 0.32s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+}
+
+.letter.behind {
+  transform: rotateX(-90deg);
+}
+
+.letter.in {
+  transform: rotateX(0deg);
+  transition: transform 0.38s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
