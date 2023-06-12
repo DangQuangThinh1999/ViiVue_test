@@ -1,0 +1,111 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-family: "Be Vietnam Pro";
+}
+#wrapper {
+  margin: auto auto;
+  position: relative;
+  height: 989px;
+  width: 1440px;
+  background: #ffffff;
+}
+.circle {
+  position: relative;
+  background: linear-gradient(63.23deg, #204ea5 -29.6%, #eb4969 101.75%);
+  /* Large Shadow */
+  box-shadow: 3px 10px 25px rgba(43, 13, 19, 0.3);
+  /* identical to box height, or 117% */
+  color: #ffffff;
+  border-radius: 50%;
+}
+.wrapper_circle {
+  position: absolute;
+  border-radius: 50%;
+  padding: 15px;
+  border: 2px dashed rgba(0, 78, 171, 0.15);
+}
+.content {
+  color: #ffffff;
+  text-align: center;
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+h1 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 56px;
+  /* or 117% */
+
+  letter-spacing: -2px;
+}
+h3 {
+  /* Heading/H3 */
+
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 34px;
+  /* or 142% */
+  color: #004eab;
+  letter-spacing: -0.8px;
+}
+.title_1 {
+  position: absolute;
+  height: 168px;
+  width: 474px;
+  left: 178px;
+  top: 149px;
+  border-radius: nullpx;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 48px;
+  color: #353455;
+}
+.title_2 {
+  position: absolute;
+  width: 420px;
+  height: 314px;
+  left: 865px;
+  top: 493px;
+}
+ul {
+  list-style: none;
+}
+li {
+  display: inline-block;
+}
+li span:nth-child(2) {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  /* or 162% */
+
+  letter-spacing: -0.2px;
+
+  /* Neutral/Dark */
+  color: #353455;
+}
+.rectangle {
+  margin-right: 10px;
+  display: inline-block;
+  width: 7.24px;
+  height: 7.24px;
+  /* Primary/Pink */
+
+  background: #eb4969;
+  border-radius: 4px 4px 0px 4px;
+  transform: rotate(-45deg);
+}
+span:nth-child(2) {
+}
